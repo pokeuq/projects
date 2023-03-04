@@ -82,3 +82,6 @@ body{
     background-color: black;
     color:var(--color);
 }
+.fancy{
+    color: rgb(79 70 229);
+}
