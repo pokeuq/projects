@@ -1,2 +1,1 @@
-# projects
-ALL MY PROGECTS
+# ALL MY PROGECTS
