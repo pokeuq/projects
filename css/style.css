@@ -76,6 +76,13 @@ body{
     line-height: 140%;
     font-weight: medium;
 }
+.opacity{
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    font-size: 16px;
+    opacity: 0.5;
+}
 
 .link {
     right: 2rem;
@@ -116,7 +123,6 @@ body{
         padding: 1rem 2.5rem;
     }
     .wrap-item{
-        position: static;
         background-color: var(--color);
         border-radius: 1rem;
     }
@@ -156,5 +162,10 @@ body{
     }
     .wrap-item{
         padding-bottom: 1rem;
+    }
+    .opacity{
+        top: 0.5rem;
+    right: 0.5rem;
+        font-size: 13px;
     }
 }
