@@ -29,7 +29,7 @@ body{
 .wrap-item{
     border-radius: 1rem;
     position: relative;
-
+    background-color: var(--color);
 }
 .item{
     display: flex;
@@ -50,10 +50,10 @@ body{
     margin: 0 auto;
     border-radius: 2rem;
     object-fit: cover;
-    transition: .2s;
+    transition: .2s ease-in-out;
 }
 .image:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .responsive {
@@ -79,6 +79,7 @@ body{
     font-size: 20px;
     line-height: 140%;
     font-weight: medium;
+    padding-bottom: 3rem;
 }
 .opacity{
     color: var(--word-color);
@@ -101,8 +102,22 @@ body{
     padding: 0.8rem 1.8rem;
         border-radius: 1rem;
     font-size: 20px;
-
-    
+}
+.bonus {
+  display: inline-block;
+  letter-spacing: 0.2em;
+  font-family: 'Fredoka One', cursive;
+  color:black;
+  padding: 1.5rem 4rem;
+  margin: 1rem auto;
+      border-radius: 1rem;
+  font-size: 24px;
+}
+.wrap-item:last-child{
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
     position: relative;
@@ -259,7 +274,7 @@ a {
 
 
 
-@media screen and (max-width:930px){
+@media screen and (max-width:1024px){
     .star-1,.star-2,.star-3,.star-4,.star-5,.star-6{
         display: none;
     }
@@ -277,6 +292,12 @@ a {
         margin: 0rem 3rem 2.2rem 3rem;
         padding: 1rem 2.5rem;
     }
+    .bonus {
+      display: inline-block;
+      position:static;
+      padding: 1.5rem 4rem;
+      margin: 1rem auto;
+  }
     .wrap-item{
         background-color: var(--color);
         border-radius: 1rem;
@@ -294,8 +315,12 @@ a {
         row-gap: 2.3rem;
     }
     .image{
-      width: 57rem;
+      width: 62rem;
     }
+    .subtitle{
+      padding-bottom: 0rem;
+    }
+    
 }
 @media screen and (max-width:420px) {
     .title {
@@ -318,7 +343,19 @@ a {
         margin: 0rem 2rem ;
         padding: 0.7rem 2rem;
     }
-    .wrap-item{
+    .bonus {
+      text-align: center;
+      display: block;
+      position:static;
+      padding: 1.5rem 4rem;
+      margin: 1rem auto;
+  }
+  .bonus{
+    transform: scale(0.8);
+    margin: 0.3rem auto;
+    
+  }
+    .wrap-item:not(:last-child){
         padding-bottom: 2rem;
     }
     .opacity{
