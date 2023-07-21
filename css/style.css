@@ -363,7 +363,7 @@ a {
     margin: 0.3rem auto;
     
   }
-    .wrap-item:not(:last-child){
+    .wrap-item{
         padding-bottom: 2rem;
     }
     .opacity{
